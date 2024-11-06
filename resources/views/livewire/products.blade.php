@@ -13,6 +13,7 @@
                 <td>{{ $loop->index + 1 }}</td>
                 <td>{{ $product->name }}</td>
                 <td>
+                    <a href="/update-product/{{ $product->id }}">Edit</a>
                     <button wire:click="delete({{ $product->id }})">Delete</button>
                 </td>
             </tr>
